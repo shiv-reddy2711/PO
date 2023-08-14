@@ -62,7 +62,7 @@ update listToUpdate;
         }
     }
 }*/
-   public static void exampleAccountMethods (Map<Id, Account> accountListNew, Map<Id, Account> accountListOld) {
+   public static void exampleAccount (Map<Id, Account> accountListNew, Map<Id, Account> accountListOld) {
         for (Account myAccount : accountListNew.values()){
             system.debug('++++++++'+myAccount);
             if (accountListNew.get(myAccount.Id).Name != accountListOld.get(myAccount.Id).Name) {
