@@ -43,7 +43,7 @@ export default class PdfGenerate extends LightningElement {
 
     createHeaders(keys) {
         var result = [];
-        for (var i = 0; i < keys.length; i += 1) {
+        for (var i = 0; i < keys.length; i += 2) {
             result.push({
                 id: keys[i],
                 name: keys[i],
